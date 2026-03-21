@@ -1,0 +1,155 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2026-03-21 01:27:23
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229) ~[?:?] {re:mixin}
+-- Mod loading issue for: betternether --
+Details:
+	Caused by 0: java.lang.ExceptionInInitializerError
+		at TRANSFORMER/betternether@21.0.19/org.betterx.betternether.BetterNether.<init>(BetterNether.java:42) ~[BetterNether-21.0.19.jar%23220!/:?] {re:mixin,re:classloading}
+		at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?] {}
+		at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?] {}
+		at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:115) ~[loader-4.0.42.jar%23163!/:4.0] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$constructMods$3(ModLoader.java:153) ~[loader-4.0.42.jar%23163!/:4.0] {re:mixin}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.42.jar%23163!/:4.0] {re:mixin}
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {re:mixin}
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1310) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841) ~[?:?] {re:computing_frames}
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806) ~[?:?] {re:computing_frames}
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/BetterNether-21.0.19.jar
+	Failure message: Better Nether (betternether) has failed to load correctly
+		java.lang.ExceptionInInitializerError: null
+	Mod version: 21.0.19
+	Mod issues URL: https://github.com/quiqueck/BetterNether/issues
+	Exception message: java.util.ConcurrentModificationException
+Stacktrace:
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1229) ~[?:?] {re:mixin}
+	at TRANSFORMER/wover@21.0.19/org.betterx.wover.block.api.BlockRegistry.forMod(BlockRegistry.java:62) ~[worldweaver-21.0.19.jar%23239!/:?] {re:classloading}
+	at TRANSFORMER/betternether@21.0.19/org.betterx.betternether.registry.NetherBlocks.getBlockRegistry(NetherBlocks.java:326) ~[BetterNether-21.0.19.jar%23220!/:?] {re:mixin,re:classloading}
+	at TRANSFORMER/betternether@21.0.19/org.betterx.betternether.registry.NetherBlocks.<clinit>(NetherBlocks.java:316) ~[BetterNether-21.0.19.jar%23220!/:?] {re:mixin,re:classloading}
+	at TRANSFORMER/betternether@21.0.19/org.betterx.betternether.BetterNether.<init>(BetterNether.java:42) ~[BetterNether-21.0.19.jar%23220!/:?] {re:mixin,re:classloading}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?] {}
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?] {}
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:115) ~[loader-4.0.42.jar%23163!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$constructMods$3(ModLoader.java:153) ~[loader-4.0.42.jar%23163!/:4.0] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.42.jar%23163!/:4.0] {re:mixin}
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {re:mixin}
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1310) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1841) ~[?:?] {re:computing_frames}
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1806) ~[?:?] {re:computing_frames}
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 21.0.10, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 243357680 bytes (232 MiB) / 1174405120 bytes (1120 MiB) up to 34359738368 bytes (32768 MiB)
+	CPUs: 32
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 9 9950X 16-Core Processor            
+	Identifier: AuthenticAMD Family 26 Model 68 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 4.29
+	Number of physical packages: 1
+	Number of physical CPUs: 16
+	Number of logical CPUs: 32
+	Graphics card #0 name: NVIDIA GeForce RTX 4070 SUPER
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 12282.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.9579
+	Memory slot #0 capacity (MiB): 32768.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 32768.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 69342.38
+	Virtual memory used (MiB): 18600.57
+	Swap memory total (MiB): 4096.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 13398.99, total: 953852.00
+	Space in storage for workdir (MiB): available: 13398.99, total: 953852.00
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms326m -Xmx32768m
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclient
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		architectury-13.0.8-neoforge.jar                  |Architectury                  |architectury                  |13.0.8              |Manifest: NOSIGNATURE
+		bclib-21.0.20.jar                                 |BCLib                         |bclib                         |21.0.20             |Manifest: NOSIGNATURE
+		BetterEnd-21.0.24.jar                             |Better End                    |betterend                     |21.0.24             |Manifest: NOSIGNATURE
+		BetterNether-21.0.19.jar                          |Better Nether                 |betternether                  |21.0.19             |Manifest: NOSIGNATURE
+		biomesize-1.21.1-1.6.jar                          |biomesize mod                 |biomesize                     |1.6                 |Manifest: NOSIGNATURE
+		cloth-config-15.0.140-neoforge.jar                |Cloth Config v15 API          |cloth_config                  |15.0.140            |Manifest: NOSIGNATURE
+		CraftTweaker-neoforge-1.21.1-21.0.38.jar          |CraftTweaker                  |crafttweaker                  |21.0.38             |Manifest: NOSIGNATURE
+		create-1.21.1-6.0.9.jar                           |Create                        |create                        |6.0.9               |Manifest: NOSIGNATURE
+		cupboard-1.21-3.5.jar                             |Cupboard mod                  |cupboard                      |3.5                 |Manifest: NOSIGNATURE
+		DistantHorizons-2.4.5-b-1.21.1-fabric-neoforge.jar|Distant Horizons              |distanthorizons               |2.4.5-b             |Manifest: NOSIGNATURE
+		ferritecore-7.0.3-neoforge.jar                    |Ferrite Core                  |ferritecore                   |7.0.3               |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		flywheel-neoforge-1.21.1-1.0.6.jar                |Flywheel                      |flywheel                      |1.0.6               |Manifest: NOSIGNATURE
+		forgematica-0.4.1+mc1.21.1.jar                    |Forgematica                   |forgematica                   |0.4.1+mc1.21.1      |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base(Thin|fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.10+9afaaf8c19   |Manifest: NOSIGNATURE
+		fabric-networking-api-v1-4.3.0+6db6dff919.jar     |Forgified Fabric Networking AP|fabric_networking_api_v1      |4.3.0+6db6dff919    |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.0+acb05a3919.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.0+acb05a3919    |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.48+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.48+73761d2e19   |Manifest: NOSIGNATURE
+		freecam-neoforge-1.3.0+mc1.21.jar                 |Freecam                       |freecam                       |1.3.0+mc1.21        |Manifest: NOSIGNATURE
+		GlitchCore-neoforge-1.21.1-2.1.0.0.jar            |GlitchCore                    |glitchcore                    |2.1.0.0             |Manifest: NOSIGNATURE
+		iris-neoforge-1.8.12+mc1.21.1.jar                 |Iris                          |iris                          |1.8.12-snapshot+mc1.|Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.27.0.340.jar               |Just Enough Items             |jei                           |19.27.0.340         |Manifest: NOSIGNATURE
+		lithostitched-1.6.1-neoforge-1.21.1.jar           |Lithostitched                 |lithostitched                 |1.6.1               |Manifest: NOSIGNATURE
+		mafglib-0.4.3+mc1.21.1.jar                        |MaFgLib                       |mafglib                       |0.4.3+mc1.21.1      |Manifest: NOSIGNATURE
+		client-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		neoforge-21.1.219-universal.jar                   |NeoForge                      |neoforge                      |21.1.219            |Manifest: NOSIGNATURE
+		ponder-neoforge-1.0.81+mc1.21.1.jar               |Ponder                        |ponder                        |1.0.81+mc1.21.1     |Manifest: NOSIGNATURE
+		SereneSeasons-neoforge-1.21.1-10.1.0.3.jar        |Serene Seasons                |sereneseasons                 |10.1.0.3            |Manifest: NOSIGNATURE
+		sodium-neoforge-0.6.13+mc1.21.1.jar               |Sodium                        |sodium                        |0.6.13+mc1.21.1     |Manifest: NOSIGNATURE
+		tectonic-3.0.19-neoforge-1.21.1.jar               |Tectonic                      |tectonic                      |3.0.19              |Manifest: NOSIGNATURE
+		travelersbackpack-neoforge-1.21.1-10.1.33.jar     |Traveler's Backpack           |travelersbackpack             |10.1.33             |Manifest: NOSIGNATURE
+		worldweaver-21.0.19.jar                           |WorldWeaver                   |wover                         |21.0.19             |Manifest: NOSIGNATURE
+		wunderlib-21.0.10.jar                             |WunderLib                     |wunderlib                     |21.0.10             |Manifest: NOSIGNATURE
+		xaeroworldmap-neoforge-1.21.1-1.40.11.jar         |Xaero's World Map             |xaeroworldmap                 |1.40.11             |Manifest: NOSIGNATURE
+		xaerolib-neoforge-1.21.1-1.1.0.jar                |XaeroLib                      |xaerolib                      |1.1.0               |Manifest: NOSIGNATURE
+	Crash Report UUID: 00d7e00a-01a9-4553-be9a-b394bdeabf44
+	FML: 4.0.42
+	NeoForge: 21.1.219
+	Flywheel Backend: flywheel:off

@@ -1,0 +1,187 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2026-03-21 00:39:04
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Mod loading issue for: tectonic --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/tectonic-3.0.19-neoforge-1.21.1.jar
+	Failure message: Mod tectonic requires lithostitched 1.4.11 or above
+		Currently, lithostitched is not installed
+		
+	Mod version: 3.0.19
+	Mod issues URL: https://github.com/Apollounknowndev/tectonic/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: forgematica --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/forgematica-0.4.1+mc1.21.1.jar
+	Failure message: Mod forgematica requires mafglib 0.4 or above
+		Currently, mafglib is not installed
+		
+	Mod version: 0.4.1+mc1.21.1
+	Mod issues URL: https://github.com/CagayakeGirls/litematica-neoforge/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: betterend --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/BetterEnd-21.0.24.jar
+	Failure message: Mod betterend requires wunderlib 21.0.9 or above
+		Currently, wunderlib is not installed
+		
+	Mod version: 21.0.24
+	Mod issues URL: https://github.com/quiqueck/BetterEnd/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: betterend --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/BetterEnd-21.0.24.jar
+	Failure message: Mod betterend requires bclib 21.0.14 or above
+		Currently, bclib is not installed
+		
+	Mod version: 21.0.24
+	Mod issues URL: https://github.com/quiqueck/BetterEnd/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: betternether --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/BetterNether-21.0.19.jar
+	Failure message: Mod betternether requires bclib 21.0.14 or above
+		Currently, bclib is not installed
+		
+	Mod version: 21.0.19
+	Mod issues URL: https://github.com/quiqueck/BetterNether/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: betterend --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/BetterEnd-21.0.24.jar
+	Failure message: Mod betterend requires wover 21.0.16 or above
+		Currently, wover is not installed
+		
+	Mod version: 21.0.24
+	Mod issues URL: https://github.com/quiqueck/BetterEnd/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: betternether --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/BetterNether-21.0.19.jar
+	Failure message: Mod betternether requires wunderlib 21.0.9 or above
+		Currently, wunderlib is not installed
+		
+	Mod version: 21.0.19
+	Mod issues URL: https://github.com/quiqueck/BetterNether/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: tectonic --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/tectonic-3.0.19-neoforge-1.21.1.jar
+	Failure message: Mod tectonic requires lithostitched 1.4.11 or above
+		Currently, lithostitched is not installed
+		
+	Mod version: 3.0.19
+	Mod issues URL: https://github.com/Apollounknowndev/tectonic/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: sereneseasons --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar
+	Failure message: Mod sereneseasons requires glitchcore 2.1.0.0 or above
+		Currently, glitchcore is not installed
+		
+	Mod version: 10.1.0.3
+	Mod issues URL: https://github.com/Glitchfiend/SereneSeasons/issues
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: hdr_mod --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/hdr_mod-neoforge-1.1.1-1.21.1.jar
+	Failure message: Mod hdr_mod requires architectury any
+		Currently, architectury is not installed
+		
+	Mod version: 1.1.0-1.21.1
+	Mod issues URL: <No issues URL found>
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: biomesize --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/biomesize-1.21.1-1.6.jar
+	Failure message: Mod biomesize requires cupboard 1.21-1.4 or above
+		Currently, cupboard is not installed
+		
+	Mod version: 1.6
+	Mod issues URL: <No issues URL found>
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: betternether --
+Details:
+	Mod file: /C:/Users/bossun/AppData/Roaming/PolyMC/instances/Moda V2 Neoforge 1.21.1/.minecraft/mods/BetterNether-21.0.19.jar
+	Failure message: Mod betternether requires wover 21.0.14 or above
+		Currently, wover is not installed
+		
+	Mod version: 21.0.19
+	Mod issues URL: https://github.com/quiqueck/BetterNether/issues
+	Exception message: <No associated exception found>
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 21.0.10, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 264176464 bytes (251 MiB) / 687865856 bytes (656 MiB) up to 34359738368 bytes (32768 MiB)
+	CPUs: 32
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 9 9950X 16-Core Processor            
+	Identifier: AuthenticAMD Family 26 Model 68 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 4.29
+	Number of physical packages: 1
+	Number of physical CPUs: 16
+	Number of logical CPUs: 32
+	Graphics card #0 name: NVIDIA GeForce RTX 4070 SUPER
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 12282.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.9579
+	Memory slot #0 capacity (MiB): 32768.00
+	Memory slot #0 clockSpeed (GHz): 4.80
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MiB): 32768.00
+	Memory slot #1 clockSpeed (GHz): 4.80
+	Memory slot #1 type: Unknown
+	Virtual memory max (MiB): 69342.38
+	Virtual memory used (MiB): 16825.62
+	Swap memory total (MiB): 4096.00
+	Swap memory used (MiB): 0.00
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 24885.19, total: 953852.00
+	Space in storage for workdir (MiB): available: 24885.19, total: 953852.00
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms326m -Xmx32768m
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclient
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		client-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		neoforge-21.1.219-universal.jar                   |NeoForge                      |neoforge                      |21.1.219            |Manifest: NOSIGNATURE
