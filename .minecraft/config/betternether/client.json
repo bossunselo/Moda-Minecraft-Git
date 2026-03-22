@@ -5,7 +5,7 @@
     "weeping_obsidian_particles": true
   },
   "cosmetic": {
-    "fog_density": 0.75,
+    "fog_density": 0,
     "thin_armor": true
   },
   "modify_version": "21.0.19"
