@@ -1,6 +1,7 @@
-Distant_Horizons_server_data/
-logs/
-xaero/
-config/
-crash-reports/
-
+/.minecraft/logs
+/.minecraft/config
+/.minecraft/xaero
+/.minecraft/Distant_Horizons_server_data
+/.minecraft/crash-reports
+.minecraft/options.txt
+.minecraft/servers.dat_old
