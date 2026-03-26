@@ -8,10 +8,8 @@
 instance.cfg
 .minecraft/config/bclib/client.json
 .minecraft/config/bclib/main.json
-.minecraft/config/betterend/client.json
 .minecraft/config/betterend/generator.json
 .minecraft/config/betterend/portals.json
-.minecraft/config/betternether/client.json
 .minecraft/config/betternether/default_game_rules.json
 .minecraft/config/betternether/world.json
 .minecraft/config/biomesize.json
@@ -66,6 +64,5 @@ instance.cfg
 .minecraft/shaderpacks/rethinking-voxels_r0.1-beta9 + Clrwl_1.0.4.zip
 .minecraft/options.txt
 instance.cfg
-.minecraft/options.txt
-instance.cfg
 /.minecraft/logs
+.minecraft/config/betterend/client.json
