@@ -70,3 +70,4 @@ instance.cfg
 .minecraft/mods/.index/create-deco.pw.toml
 /.minecraft/crash-reports
 .minecraft/config/chunkloaders-common.toml
+.minecraft/config/gravestone-client.toml
