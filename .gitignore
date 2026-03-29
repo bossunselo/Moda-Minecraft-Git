@@ -66,3 +66,4 @@ instance.cfg
 instance.cfg
 /.minecraft/logs
 .minecraft/config/betterend/client.json
+.minecraft/mods/.index/create-ultimate-factory.pw.toml
