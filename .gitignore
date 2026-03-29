@@ -68,3 +68,5 @@ instance.cfg
 .minecraft/config/betterend/client.json
 .minecraft/mods/.index/create-ultimate-factory.pw.toml
 .minecraft/mods/.index/create-deco.pw.toml
+/.minecraft/crash-reports
+.minecraft/config/chunkloaders-common.toml
