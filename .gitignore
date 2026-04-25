@@ -71,3 +71,5 @@ instance.cfg
 /.minecraft/crash-reports
 .minecraft/config/chunkloaders-common.toml
 .minecraft/config/gravestone-client.toml
+/.minecraft/xaero
+/.minecraft/saves
